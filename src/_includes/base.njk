@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <!-- Top Alert Banner -->
+  <div class="top-banner" id="topBanner">
+    <span class="top-banner-text">Sarpy EMA may preempt this NET any time.</span>
+    <button class="top-banner-close" onclick="closeTopBanner()" aria-label="Close banner">&times;</button>
+  </div>
+
   <header class="site-header">
     <div class="header-container">
       <a href="/" class="site-logo">Friday .235 NET at 9 pm</a>
@@ -45,6 +51,18 @@
     // Check if user closed the footer this session
     if (sessionStorage.getItem('footerClosed') === 'true') {
       document.getElementById('floatingFooter').style.display = 'none';
+    }
+
+    function closeTopBanner() {
+      document.getElementById('topBanner').style.display = 'none';
+      document.body.classList.add('top-banner-closed');
+      sessionStorage.setItem('topBannerClosed', 'true');
+    }
+
+    // Check if user closed the top banner this session
+    if (sessionStorage.getItem('topBannerClosed') === 'true') {
+      document.getElementById('topBanner').style.display = 'none';
+      document.body.classList.add('top-banner-closed');
     }
 
     // Mobile menu toggle

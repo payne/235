@@ -26,15 +26,63 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   padding-bottom: 100px;
+  padding-top: 2.25rem;
+}
+
+body.top-banner-closed {
+  padding-top: 0;
 }
 
 /* Header & Navigation */
+/* Top Alert Banner */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #d32f2f;
+  color: #fff;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-banner-text {
+  display: inline-block;
+}
+
+.top-banner-close {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.top-banner-close:hover {
+  opacity: 1;
+}
+
 .site-header {
   background: var(--secondary-color);
   border-bottom: 2px solid var(--accent-color);
   position: sticky;
-  top: 0;
+  top: 2.25rem;
   z-index: 100;
+}
+
+body.top-banner-closed .site-header {
+  top: 0;
 }
 
 .header-container {
@@ -389,6 +437,27 @@ h3 {
 @media (max-width: 600px) {
   html {
     font-size: 16px;
+  }
+
+  body {
+    padding-top: 2.5rem;
+  }
+
+  body.top-banner-closed {
+    padding-top: 0;
+  }
+
+  .top-banner {
+    font-size: 0.85rem;
+    padding: 0.4rem 2rem 0.4rem 0.75rem;
+  }
+
+  .site-header {
+    top: 2.5rem;
+  }
+
+  body.top-banner-closed .site-header {
+    top: 0;
   }
 
   h1 {
