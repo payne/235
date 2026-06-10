@@ -96,3 +96,35 @@ Add a responsive navigation menu linking to a Flyer page and a Logs page.
     ├── index.md
     └── logs.md
 ```
+
+---
+
+## Session 3 - 2026-06-10
+
+### User Request
+1. Change title to "9 PM Friday Technical Ragchew NET"
+2. Change color scheme to eliminate the RED
+3. Reduce blank space, especially vertical blank space
+
+### Actions Taken
+1. Updated title across all pages:
+   - `index.md` - New title and streamlined content
+   - `flyer.md` - Updated flyer header and tagline
+   - `base.njk` - Updated site logo to "Friday NET" and meta description
+2. Changed accent color from red (#e94560) to teal/cyan (#00bcd4)
+3. Reduced vertical spacing throughout:
+   - Reduced main padding from 2rem to 1rem
+   - Reduced h1 from 3rem to 2rem, h2 from 1.5rem to 1.25rem
+   - Reduced h2 margins from 2rem/1rem to 1rem/0.5rem
+   - Reduced paragraph margins from 1rem to 0.5rem
+   - Reduced hr margins from 2rem to 1rem
+   - Reduced list and blockquote spacing
+   - Reduced flyer container and card padding
+   - Removed horizontal rules from index.md content
+   - Consolidated content paragraphs
+
+### Files Modified
+- `src/index.md` - New title, removed hr tags, condensed content
+- `src/flyer.md` - New title, updated flyer header
+- `src/_includes/base.njk` - Updated logo and meta description
+- `src/assets/css/style.css` - New accent color, reduced all vertical spacing

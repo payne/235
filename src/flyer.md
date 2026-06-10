@@ -1,20 +1,16 @@
 ---
 layout: base.njk
-title: 235 NET Flyer - Share the Word
+title: Flyer - 9 PM Friday Technical Ragchew NET
 ---
 
 # Flyer
 
-## Spread the Word!
-
-Download and share our flyer to help grow the 235 NET community.
-
----
+Download and share to help grow the NET community.
 
 <div class="flyer-container">
   <div class="flyer">
-    <div class="flyer-header">235 NET</div>
-    <div class="flyer-tagline">Friday Night Ragchew</div>
+    <div class="flyer-header">9 PM Friday NET</div>
+    <div class="flyer-tagline">Technical Ragchew</div>
     <div class="flyer-details">
       <div class="flyer-item">
         <span class="flyer-label">When</span>
@@ -38,13 +34,9 @@ Download and share our flyer to help grow the 235 NET community.
   </div>
 </div>
 
----
-
 ## Print Instructions
-
 1. Print this page or screenshot the flyer above
 2. Post at your local ham radio club
 3. Share with fellow amateur radio operators
-4. Spread the word on social media
 
 **73 de 235 NET**
