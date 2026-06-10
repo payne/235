@@ -27,7 +27,7 @@ A record of our weekly NET activity. Thank you to everyone who checks in!
     <tr>
       <td data-value="{{ log.date }}">{{ log.date }}</td>
       <td>{{ log.ncs }}</td>
-      <td data-value="{{ log.checkins.length }}">{{ log.checkins | join(", ") }}</td>
+      <td data-value="{{ log.checkins.length }}">{{ log.checkins | sort | join(", ") }}</td>
       <td>{{ log.description }}</td>
     </tr>
     {% else %}
