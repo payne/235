@@ -321,6 +321,8 @@ code {
 .flyer-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -392,6 +394,19 @@ code {
   font-size: 0.9rem;
   color: var(--text-color);
   opacity: 0.8;
+}
+
+.flyer-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flyer-qr-label {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 
 /* Table Styles (for Logs) */
@@ -598,6 +613,10 @@ h3 {
   }
 
   /* Flyer responsive */
+  .flyer-container {
+    flex-direction: column;
+  }
+
   .flyer {
     padding: 1rem;
   }

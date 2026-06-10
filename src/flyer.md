@@ -32,7 +32,23 @@ Download and share to help grow the NET community.
     <div class="flyer-repeater">W0JJK Repeater - Omaha, NE</div>
     <div class="flyer-motto">More Radio | More Fun | More People</div>
   </div>
+  <div class="flyer-qr">
+    <div id="flyer-qrcode"></div>
+    <div class="flyer-qr-label">235.MoreRadio.club</div>
+  </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById('flyer-qrcode'), {
+    text: 'https://235.MoreRadio.club',
+    width: 150,
+    height: 150,
+    colorDark: '#00bcd4',
+    colorLight: '#1a1a2e',
+    correctLevel: QRCode.CorrectLevel.H
+  });
+</script>
 
 ## Print Instructions
 1. Print this page or screenshot the flyer above
