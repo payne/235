@@ -11,7 +11,7 @@ Create an 11ty site promoting a HAM radio NET on the VHF repeater with the nickn
 - **What:** Traditional HAM radio round robin ragchew and technical discussion NET
 - **Why:** More Radio creates More Fun attracts More People enables More Radio
 - **Who:** Anyone with a HAM radio license!
-- **How:** Brought to you by W0JJK and a growing group of net control stations (NCS)
+- **How:** Brought to you by [W0JJK](https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=54) and a growing group of net control stations (NCS)
 
 **Additional Requirements:**
 - Include a floating footer image similar to https://moreradio.club/
@@ -128,3 +128,28 @@ Add a responsive navigation menu linking to a Flyer page and a Logs page.
 - `src/flyer.md` - New title, updated flyer header
 - `src/_includes/base.njk` - Updated logo and meta description
 - `src/assets/css/style.css` - New accent color, reduced all vertical spacing
+
+---
+
+## Session 4 - 2026-06-10
+
+### User Request
+Link all instances of W0JJK (that are not already hyperlinks) to the RepeaterBook page: https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=54
+
+### Actions Taken
+1. Searched codebase for all instances of "W0JJK"
+2. Identified which instances needed linking vs. which should remain unchanged
+3. Added hyperlinks to 5 instances across 4 files
+
+### Files Modified
+- `src/flyer.md` - Added HTML anchor around W0JJK in the repeater div
+- `src/logs.md` - Added markdown link to W0JJK
+- `src/index.md` - Added markdown links to W0JJK (2 instances)
+- `interactions.md` - Added markdown link to W0JJK
+
+### Instances Left Unchanged
+- `src/index.md:14` - Already a hyperlink to RepeaterBook
+- `interactions.md:10` - Already a hyperlink to RepeaterBook
+- `src/share.md` - URL-encoded instances in social share URLs
+- `src/_includes/base.njk` - Meta description (metadata field)
+- `package.json` - Package description (metadata field)

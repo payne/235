@@ -3,10 +3,6 @@ layout: base.njk
 title: Flyer - 9 PM Friday Technical Ragchew NET
 ---
 
-# Flyer
-
-Download and share to help grow the NET community.
-
 <div class="flyer-container">
   <div class="flyer">
     <div class="flyer-header">9 PM Friday NET</div>
@@ -29,7 +25,7 @@ Download and share to help grow the NET community.
         <span class="flyer-value">All Licensed HAMs Welcome!</span>
       </div>
     </div>
-    <div class="flyer-repeater">W0JJK Repeater - Omaha, NE</div>
+    <div class="flyer-repeater"><a href="https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=54">W0JJK</a> Repeater - Omaha, NE</div>
     <div class="flyer-motto">More Radio | More Fun | More People</div>
   </div>
   <div class="flyer-qr">
@@ -49,10 +45,3 @@ Download and share to help grow the NET community.
     correctLevel: QRCode.CorrectLevel.H
   });
 </script>
-
-## Print Instructions
-1. Print this page or screenshot the flyer above
-2. Post at your local ham radio club
-3. Share with fellow amateur radio operators
-
-**73 de 235 NET**

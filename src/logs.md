@@ -93,7 +93,7 @@ A record of our weekly NET activity. Thank you to everyone who checks in!
 
 ## Want to Be Listed?
 
-Simply check in to the NET on Friday nights at 9 PM Central on the W0JJK repeater (145.235 MHz, PL 131.8).
+Simply check in to the NET on Friday nights at 9 PM Central on the [W0JJK](https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=54) repeater (145.235 MHz, PL 131.8).
 
 All licensed amateur radio operators are welcome!
 
@@ -101,6 +101,6 @@ All licensed amateur radio operators are welcome!
 
 ## Become a Net Control Station
 
-Interested in helping run the NET? We're always looking for volunteers to serve as Net Control Stations. Contact one of the regular NCS operators during the NET to learn more.
+Interested in helping run the NET? We're always looking for volunteers to serve as Net Control Stations (one time or regular rotation). Contact one of the NCS operators to learn more.
 
 **73 de 235 NET**
