@@ -28,6 +28,126 @@ body {
   padding-bottom: 120px; /* Space for floating footer */
 }
 
+/* Header & Navigation */
+.site-header {
+  background: var(--secondary-color);
+  border-bottom: 2px solid var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.site-logo:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.2s ease;
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  width: 100%;
+}
+
+.site-nav a.active {
+  color: var(--accent-color);
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  left: 0;
+  transition: transform 0.2s ease;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+.menu-toggle.menu-open .hamburger {
+  background: transparent;
+}
+
+.menu-toggle.menu-open .hamburger::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.menu-open .hamburger::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -160,6 +280,122 @@ code {
   opacity: 1;
 }
 
+/* Flyer Styles */
+.flyer-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.flyer {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #0f1729 100%);
+  border: 3px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(233, 69, 96, 0.2);
+}
+
+.flyer-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.flyer-tagline {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.flyer-details {
+  margin: 1.5rem 0;
+}
+
+.flyer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flyer-item:last-child {
+  border-bottom: none;
+}
+
+.flyer-label {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.flyer-value {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.flyer-repeater {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--accent-color);
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+.flyer-motto {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Table Styles (for Logs) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  background: rgba(233, 69, 96, 0.2);
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+h3 {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   html {
@@ -176,5 +412,73 @@ code {
 
   .floating-footer img {
     max-height: 60px;
+  }
+
+  /* Mobile Navigation */
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--secondary-color);
+    border-bottom: 2px solid var(--accent-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.nav-open {
+    max-height: 200px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 1.5rem 1rem;
+  }
+
+  .site-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .site-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .site-nav a {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .site-nav a::after {
+    display: none;
+  }
+
+  /* Flyer responsive */
+  .flyer {
+    padding: 1.5rem;
+  }
+
+  .flyer-header {
+    font-size: 2rem;
+  }
+
+  .flyer-item {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  /* Table responsive */
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
   }
 }

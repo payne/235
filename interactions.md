@@ -49,3 +49,50 @@ npm install
 npm start
 ```
 Then open http://localhost:8080 in your browser.
+
+---
+
+## Session 2 - 2026-06-10
+
+### User Request
+Add a responsive navigation menu linking to a Flyer page and a Logs page.
+
+### Actions Taken
+1. Updated `base.njk` to include responsive navigation header with hamburger menu
+2. Added navigation CSS with:
+   - Sticky header with logo and nav links
+   - Hamburger menu for mobile (transforms to X when open)
+   - Smooth slide-down animation for mobile menu
+   - Active page highlighting
+3. Created `src/flyer.md` - Printable flyer with NET details
+4. Created `src/logs.md` - NET check-in logs page with table format
+5. Added flyer styling (card layout with gradient background)
+6. Added table styling for logs page
+
+### Files Modified
+- `src/_includes/base.njk` - Added header with responsive nav
+- `src/assets/css/style.css` - Added nav, flyer, and table styles
+
+### Files Created
+- `src/flyer.md` - Flyer page
+- `src/logs.md` - Logs page
+
+### Current Site Structure
+```
+235/
+├── .gitignore
+├── eleventy.config.js
+├── interactions.md
+├── package.json
+└── src/
+    ├── _includes/
+    │   └── base.njk
+    ├── assets/
+    │   ├── css/
+    │   │   └── style.css
+    │   └── images/
+    │       └── more-radio-banner.svg
+    ├── flyer.md
+    ├── index.md
+    └── logs.md
+```

@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="site-logo">235 NET</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
+          <li><a href="/flyer/"{% if page.url == "/flyer/" %} class="active"{% endif %}>Flyer</a></li>
+          <li><a href="/logs/"{% if page.url == "/logs/" %} class="active"{% endif %}>Logs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
     {{ content | safe }}
   </main>
@@ -30,6 +46,17 @@
     if (sessionStorage.getItem('footerClosed') === 'true') {
       document.getElementById('floatingFooter').style.display = 'none';
     }
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const siteNav = document.getElementById('siteNav');
+
+    menuToggle.addEventListener('click', function() {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      siteNav.classList.toggle('nav-open');
+      menuToggle.classList.toggle('menu-open');
+    });
   </script>
 </body>
 </html>
