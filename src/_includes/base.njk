@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("235 NET") }}</title>
+  <meta name="description" content="235 NET - HAM Radio NET on W0JJK 145.235 MHz. Fridays at 9 PM Central Time.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <!-- Floating Footer Banner -->
+  <div class="floating-footer" id="floatingFooter">
+    <button class="close-btn" onclick="closeFooter()" aria-label="Close banner">&times;</button>
+    <a href="https://moreradio.club/" target="_blank" rel="noopener">
+      <img src="/assets/images/more-radio-banner.svg" alt="More Radio - More Radio creates More Fun attracts More People enables More Radio">
+    </a>
+  </div>
+
+  <script>
+    function closeFooter() {
+      document.getElementById('floatingFooter').style.display = 'none';
+      sessionStorage.setItem('footerClosed', 'true');
+    }
+
+    // Check if user closed the footer this session
+    if (sessionStorage.getItem('footerClosed') === 'true') {
+      document.getElementById('floatingFooter').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
