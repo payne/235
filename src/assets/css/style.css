@@ -433,6 +433,87 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+/* Share Page Styles */
+.share-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.qr-code {
+  background: var(--bg-color);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.2);
+}
+
+.qr-code canvas {
+  display: block;
+}
+
+.social-share {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.share-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.share-btn.facebook {
+  background: #1877f2;
+}
+
+.share-btn.facebook:hover {
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.5);
+}
+
+.share-btn.twitter {
+  background: #000;
+}
+
+.share-btn.twitter:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.share-btn.mastodon {
+  background: #6364ff;
+}
+
+.share-btn.mastodon:hover {
+  box-shadow: 0 4px 15px rgba(99, 100, 255, 0.5);
+}
+
+.share-btn.linkedin {
+  background: #0a66c2;
+}
+
+.share-btn.linkedin:hover {
+  box-shadow: 0 4px 15px rgba(10, 102, 194, 0.5);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   html {
