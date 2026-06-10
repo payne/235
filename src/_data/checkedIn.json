@@ -1,36 +1,14 @@
 [
   {
-    "date": "2025-05-30",
-    "ncs": "K0DEF",
+    "date": "2026-06-05",
+    "ncs": "N3PAY",
     "checkins": [
-      "K0DEF",
-      "W0ABC",
-      "N0GHI"
+      "K0ZOD",
+      "KF0VGH",
+      "N6YXL",
+      "KF0SLC",
+      "KF0VWD"
     ],
-    "description": "Light turnout due to holiday weekend. Talked about Field Day plans."
-  },
-  {
-    "date": "2025-06-06",
-    "ncs": "W0ABC",
-    "checkins": [
-      "W0ABC",
-      "K0DEF",
-      "N0GHI",
-      "WB0JKL"
-    ],
-    "description": "Discussed antenna projects and new digital modes."
-  },
-  {
-    "date": "2025-06-13",
-    "ncs": "N0GHI",
-    "checkins": [
-      "N0GHI",
-      "W0ABC",
-      "K0DEF",
-      "WB0JKL",
-      "AA0MNO",
-      "KB0PQR"
-    ],
-    "description": "Great turnout! Welcomed two new hams to the NET."
+    "description": "First NET :-)   Cut short because of storm warning. Thanks for the heads up from KF0SLC."
   }
 ]
