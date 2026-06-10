@@ -612,6 +612,21 @@ h3 {
     display: none;
   }
 
+  /* Share page responsive */
+  .share-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .share-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social-share {
+    gap: 0.75rem;
+  }
+
   /* Flyer responsive */
   .flyer-container {
     flex-direction: column;
