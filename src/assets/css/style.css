@@ -723,3 +723,56 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* Print styles for flyer page */
+@media print {
+  body {
+    background: white;
+    color: black;
+    padding: 0;
+  }
+
+  .site-header,
+  .floating-footer,
+  .top-banner {
+    display: none;
+  }
+
+  .flyer-container {
+    margin: 0;
+  }
+
+  .flyer {
+    background: white;
+    border-color: black;
+    box-shadow: none;
+  }
+
+  .flyer-header,
+  .flyer-label,
+  .flyer-qr-label {
+    color: black;
+  }
+
+  .flyer-tagline,
+  .flyer-value,
+  .flyer-motto {
+    color: #333;
+  }
+
+  .flyer-repeater {
+    border-top-color: black;
+  }
+
+  .flyer-repeater a {
+    color: black;
+  }
+
+  .flyer-item {
+    border-bottom-color: #ccc;
+  }
+
+  #flyer-qrcode {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
